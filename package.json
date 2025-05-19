@@ -1,7 +1,8 @@
 {
   "name": "@selemondev/svgl-vue",
+  "description": "An optimized package with SVG logos to be used as Vue components ✨",
   "private": false,
-  "version": "0.2.2",
+  "version": "0.0.0",
   "packageManager": "pnpm@8.15.4",
   "type": "module",
   "exports": {
@@ -24,6 +25,14 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "svgl",
+    "svgl-vue",
+    "logos",
+    "svg",
+    "vue",
+    "nuxt"
   ],
   "scripts": {
     "build": "tsup --onSuccess \"pnpm build:dts\"",
