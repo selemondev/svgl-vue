@@ -28,7 +28,7 @@ bun add @selemondev/svgl-vue
 
 ## 🚀 Usage
 
-Visit the [Svgl Components](https://svgl-react.vercel.app/docs/components) page to explore the available Svgl components. You can search for components by pressing `⌘ + k` and entering the SVG name. If you're unsure which SVGs are available, visit [Svgl](https://svgl.app/) to find the one you need.
+Visit the [Svgl logos](https://svgl.app) page to explore the available Svgl logos.
 
 ```html
 <script setup lang="ts">
