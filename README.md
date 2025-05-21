@@ -32,10 +32,10 @@ Visit the [Svgl Components](https://svgl-react.vercel.app/docs/components) page 
 
 ```html
 <script setup lang="ts">
-import { Vue } from '@selemondev/svgl-vue';
+import { VueLogo } from '@selemondev/svgl-vue';
 </script>
 <template>
-  <Vue :height="200" :width="200" />
+  <VueLogo :height="200" :width="200" />
 </template>
 ```
 

@@ -139,7 +139,7 @@ const exportFiles = async () => {
       }));
 
     const vueExports = vueFiles
-      .map(({ name, path }) => `export { default as ${pascalCase(name)} } from '${path}';`)
+      .map(({ name, path }) => `export { default as ${pascalCase(name)}Logo } from '${path}';`)
       .join('\n');
 
     const utilExports = utilFiles
