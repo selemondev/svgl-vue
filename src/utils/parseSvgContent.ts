@@ -1,4 +1,4 @@
-export const parseSvgContent = (content: string, framework: string) => {
+export const parseSvgContent = (content: string) => {
   // Remove XML and DOCTYPE declarations
   content = content.replace(/<\?xml[^>]*\?>/i, '');
   content = content.replace(/<!DOCTYPE[^>]*>/i, '');
