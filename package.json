@@ -37,9 +37,9 @@
   "scripts": {
     "build": "tsup --onSuccess \"pnpm build:dts\"",
     "build:dts": "vue-tsc --declaration --emitDeclarationOnly",
-    "generate:components": "npx esno scripts/index.ts && prettier --write ./src/**/*.vue",
+    "generate:components": "pnpm dlx esno scripts/index.ts && prettier --write ./src/**/*.vue",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "generate:release": "npx changelogen@latest --release && npm publish",
+    "generate:release": "pnpm dlx changelogen@latest --release && npm publish",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
