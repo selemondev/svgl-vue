@@ -483,7 +483,6 @@ export { default as SvglWordPressLogo } from './components/WordPress.vue';
 export { default as SvglWorkOSLogo } from './components/WorkOS.vue';
 export { default as SvglXAIGrokLogo } from './components/XAIGrok.vue';
 export { default as SvglXDLogo } from './components/XD.vue';
-export { default as SvglXRPLogo } from './components/XRP.vue';
 export { default as SvglXStateLogo } from './components/XState.vue';
 export { default as SvglXboxLogo } from './components/Xbox.vue';
 export { default as SvglXformerlyTwitterLogo } from './components/XformerlyTwitter.vue';
