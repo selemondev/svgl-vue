@@ -5,7 +5,7 @@ import path from "node:path";
 import fs from 'fs-extra'
 import type { Svgl } from "../src/types/index"
 const regex = /import type \{ iSVG \} from '@\/types\/svg';\s*export const svgs: iSVG\[\] = \[([\s\S]*)\]/;
-function extractAndCreateArray(sourceCode) {
+function extractAndCreateArray(sourceCode: string) {
     const match = sourceCode.match(regex);
     if (match && match[1]) {
         const extractedContent = match[1].trim();
@@ -46,7 +46,7 @@ function extractAndCreateArray(sourceCode) {
 })();
 const isWordmarkSvg: boolean = false
 const getSvgUrl = (svgInfo: Svgl) => {
-    let svgUrlToCopy;
+    let svgUrlToCopy: string | undefined;
     const dark = false;
 
     if (isWordmarkSvg) {
@@ -97,7 +97,7 @@ const sanitize = (fileName: string) => {
         .replace('.vue', '')
         .replace(/[^\w]/g, '')
 };
-async function createFiles(dirPath, file, content: string) {
+async function createFiles(dirPath: string, file: string, content: string) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
     }
@@ -139,7 +139,7 @@ const exportFiles = async () => {
       }));
 
     const vueExports = vueFiles
-      .map(({ name, path }) => `export { default as ${pascalCase(name)}Logo } from '${path}';`)
+      .map(({ name, path }) => `export { default as ${name === 'Svgl' ? 'Svgl' : `Svgl${pascalCase(name)}`}Logo } from '${path}';`)
       .join('\n');
 
     const utilExports = utilFiles
