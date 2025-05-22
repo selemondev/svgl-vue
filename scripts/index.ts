@@ -35,7 +35,7 @@ function extractAndCreateArray(sourceCode: string) {
                         dark: `https://svgl.app${res.route?.dark}`,
                         light: `https://svgl.app${res.route?.light}`
                     }
-                }, 'Vue')
+                })
             })
         }
     } catch (err) {
@@ -104,19 +104,19 @@ async function createFiles(dirPath: string, file: string, content: string) {
     fs.writeFileSync(path.join(dirPath, file), content);
     exportFiles();
 }
-const copySvgComponent = async (svgInfo: Svgl, framework: string) => {
+const copySvgComponent = async (svgInfo: Svgl) => {
     try {
         const svgUrlToCopy = getSvgUrl(svgInfo);
 
         const content = await getSvgContent(svgUrlToCopy);
 
-        const code = componentTemplate(content, framework);
+        const code = componentTemplate(content);
 
         if (code) {
             createFiles(targetDir, `${sanitize(`${svgInfo.title?.split(' ').join('').charAt(0)?.toLocaleUpperCase() + svgInfo.title?.slice(1)}.vue`)}.vue`, code)
         }
     } catch (err) {
-        console.error(`Error copying ${framework} component:`, err);
+        console.error(`Error copying component:`, err);
     }
 };
 const exportFiles = async () => {
