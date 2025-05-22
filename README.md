@@ -32,10 +32,10 @@ Visit the [Svgl logos](https://svgl.app) page to explore the available Svgl logo
 
 ```html
 <script setup lang="ts">
-import { VueLogo } from '@selemondev/svgl-vue';
+import { SvglVueLogo } from '@selemondev/svgl-vue';
 </script>
 <template>
-  <VueLogo :height="200" :width="200" />
+  <SvglVueLogo :height="200" :width="200" />
 </template>
 ```
 
