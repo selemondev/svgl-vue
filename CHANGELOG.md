@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.3...v0.0.4)
+
+### 🚀 Enhancements
+
+- Migrate from tsup to tsdown ([fa9cf52](https://github.com/selemondev/svgl-vue/commit/fa9cf52))
+- Migrate from eslint to biome and generate components ([308b182](https://github.com/selemondev/svgl-vue/commit/308b182))
+
+### 📖 Documentation
+
+- Update README.md file ([f85c2e6](https://github.com/selemondev/svgl-vue/commit/f85c2e6))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.2...v0.0.3)
