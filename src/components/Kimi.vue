@@ -1,36 +1,27 @@
+
 <script setup lang="ts">
 withDefaults(
-  defineProps<{
-    width?: string | number
-    height?: string | number
-  }>(),
-  {
-    width: 50,
-    height: 50
-  }
-)
+	defineProps<{
+		width?: string | number;
+		height?: string | number;
+	}>(),
+	{
+		width: 50,
+		height: 50,
+	},
+);
 </script>
 <template>
-  <svg
-    version="1.0"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1024.000000 1024.000000"
-    preserveAspectRatio="xMidYMid meet"
-    :key="width"
-    :width="width"
-    :height="height"
-    :style="{
-      width: width + 'px',
-      height: height + 'px'
-    }"
-  >
-    <g
-      transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
-      fill="#000000"
-      stroke="none"
-    >
-      <path
-        d="M1595 10228 c-360 -40 -727 -206 -1000 -452 -330 -297 -541 -714
+    
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.000000 1024.000000"
+ preserveAspectRatio="xMidYMid meet" :key="width" :width="width" :height="height" :style="{
+      width: width + 'px', height: height + 'px'
+      }">
+
+<g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1595 10228 c-360 -40 -727 -206 -1000 -452 -330 -297 -541 -714
 -585 -1161 -8 -78 -10 -1110 -8 -3570 4 -3236 5 -3465 21 -3545 62 -302 159
 -531 324 -763 79 -111 288 -318 401 -397 241 -169 506 -277 792 -322 126 -19
 7034 -19 7160 0 286 45 551 153 792 322 113 79 322 286 401 397 173 243 283
@@ -45,8 +36,9 @@ withDefaults(
 -9 1388 -4 0 -16 -30 -26 -67 -35 -128 -89 -219 -189 -318 -72 -72 -108 -99
 -176 -133 -164 -81 -87 -76 -1167 -80 l-963 -3 0 -1080 c0 -726 -3 -1087 -10
 -1100 -10 -18 -26 -19 -498 -19 -366 0 -491 3 -500 12 -17 17 -17 5209 0 5226
-9 9 133 12 494 12 425 0 484 -2 498 -16z"
-      />
-    </g>
-  </svg>
+9 9 133 12 494 12 425 0 484 -2 498 -16z"/>
+</g>
+</svg>
+
 </template>
+    

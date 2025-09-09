@@ -1,8 +1,8 @@
-import { parseSvgContent } from './parseSvgContent';
+import { parseSvgContent } from "./parseSvgContent";
 
 export const componentTemplate = (content: string) => {
-    const { templateContent, scriptTag } = parseSvgContent(content);
-    return `
+	const { templateContent, scriptTag } = parseSvgContent(content);
+	return `
 ${scriptTag}
 <template>
     ${templateContent}
