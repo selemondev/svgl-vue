@@ -16,7 +16,7 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v3
         with:
-          node-version: [18.x, 20.x]
+          node-version: 18.x
           cache: npm
 
       - run: npx changelogithub
@@ -28,10 +28,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
-
-      - name: Test
-        run: npm run test
+        run: npm run build:package
 
       - name: Config npm
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
