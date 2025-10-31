@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.4...v0.0.5)
+
+### 🚀 Enhancements
+
+- Add new component ([0aedf99](https://github.com/selemondev/svgl-vue/commit/0aedf99))
+
+### 💅 Refactors
+
+- Svg regex pattern ([6d7e879](https://github.com/selemondev/svgl-vue/commit/6d7e879))
+- Svg regex pattern ([e907e28](https://github.com/selemondev/svgl-vue/commit/e907e28))
+
+### 🏡 Chore
+
+- Update Github actions ([30b6ec8](https://github.com/selemondev/svgl-vue/commit/30b6ec8))
+- Add new files import ([dd524d3](https://github.com/selemondev/svgl-vue/commit/dd524d3))
+- Add new files import ([39b8aad](https://github.com/selemondev/svgl-vue/commit/39b8aad))
+- **workflow:** Add svgl cron workflow ([6d8d947](https://github.com/selemondev/svgl-vue/commit/6d8d947))
+- Refresh lock file ([7c11735](https://github.com/selemondev/svgl-vue/commit/7c11735))
+- Add new components ([e5c0c5d](https://github.com/selemondev/svgl-vue/commit/e5c0c5d))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.3...v0.0.4)
