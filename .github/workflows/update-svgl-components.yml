@@ -1,0 +1,90 @@
+name: Update Svgl Components
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Record start time
+        id: start
+        run: echo "START_TIME=$(date +%s)" >> $GITHUB_ENV
+
+      - name: Generate Svgl Vue components
+        run: pnpm generate:components
+
+      - name: Compute duration
+        id: duration
+        run: echo "DURATION=$(( $(date +%s) - $START_TIME ))" >> $GITHUB_ENV
+
+      - name: Format duration as Xm Ys
+        id: format
+        run: |
+          MIN=$(( DURATION / 60 ))
+          SEC=$(( DURATION % 60 ))
+          echo "min_sec=${MIN}m ${SEC}s" >> $GITHUB_OUTPUT
+
+      - name: Count new Vue components
+        id: count
+        run: |
+          git fetch origin main
+          COUNT=$(git diff --name-status origin/main | grep '^A' | grep 'src/components/' | wc -l)
+          echo "components_count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Skip if no components found
+        if: ${{ steps.count.outputs.components_count == '0' }}
+        run: |
+          echo "No new components."
+          exit 0
+
+      - name: Get list of added Vue components (names only)
+        id: list
+        run: |
+          FILES=$(git diff --name-status origin/main | grep '^A' | grep 'src/components/' | awk '{print $2}')
+          NAMES=""
+          for f in $FILES; do
+            base=$(basename "$f" .vue)
+            NAMES="$NAMES $base"
+          done
+          echo "components_list_names=$NAMES" >> $GITHUB_OUTPUT
+
+      - name: Format component list for commit message
+        id: pretty
+        run: |
+          printf "prettify_component_list_names=" >> $GITHUB_OUTPUT
+          for f in ${{ steps.list.outputs.components_list_names }}; do
+            printf "- %s\n" "$f" >> $GITHUB_OUTPUT
+          done
+
+      - name: Reset lockfile changes
+        run: git checkout -- pnpm-lock.yaml
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: update-svgl-vue-components
+          branch-suffix: timestamp
+          base: main
+          title: 'chore: update svgl vue components (added "${{ steps.count.outputs.components_count }}" new components, took "${{ steps.format.outputs.min_sec }}")'
+          commit-message: |
+            chore: update svgl vue components
+
+            Added ${{ steps.count.outputs.components_count }} components:
+
+            ${{ steps.pretty.outputs.prettify_component_list_names }}
+
+          delete-branch: true
+          token: ${{ secrets.GITHUB_TOKEN }}
