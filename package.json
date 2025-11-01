@@ -2,7 +2,7 @@
   "name": "@selemondev/svgl-vue",
   "description": "An optimized package with SVG logos to be used as Vue components ✨",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "packageManager": "pnpm@8.15.9",
   "type": "module",
   "files": [
