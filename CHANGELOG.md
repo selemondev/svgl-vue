@@ -5,6 +5,18 @@
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.7...v0.0.7)
 
+### 🏡 Chore
+
+- **release:** V0.0.7 ([5df7078](https://github.com/selemondev/svgl-vue/commit/5df7078))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
+## v0.0.7
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.7...v0.0.7)
+
 ## v0.1.0
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.7...v0.1.0)
