@@ -18,7 +18,7 @@ jobs:
           version: 8
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm i --frozen-lockfile
 
       - name: Record start time
         id: start
