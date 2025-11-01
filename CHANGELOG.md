@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.6...v0.0.7)
+
+### 🏡 Chore
+
+- **workflow:** Update release workflow ([186e862](https://github.com/selemondev/svgl-vue/commit/186e862))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.6
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.5...v0.0.6)
