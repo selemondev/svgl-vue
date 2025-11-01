@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v1.0.0...v1.0.1)
+
+### 🏡 Chore
+
+- **workflow:** Update GITHUB_TOKEN's env secret ([1a3be49](https://github.com/selemondev/svgl-vue/commit/1a3be49))
+- **workflow:** Update update-svgl-components auto-generation workflow ([5cc843a](https://github.com/selemondev/svgl-vue/commit/5cc843a))
+- Update svgl vue components ([a38666f](https://github.com/selemondev/svgl-vue/commit/a38666f))
+- **workflow:** Update update-svgl-components key value grammars ([f18e1ec](https://github.com/selemondev/svgl-vue/commit/f18e1ec))
+
+### ❤️ Contributors
+
+- Selemondev ([@selemondev](https://github.com/selemondev))
+
 ## v0.1.0
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.8...v0.1.0)
