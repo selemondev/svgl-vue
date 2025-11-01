@@ -108,12 +108,12 @@ jobs:
           base: main
           title: 'chore: update svgl vue components (added ${{ steps.count.outputs.total }} new components, took ${{ steps.duration.outputs.formatted }})'
           body: |
-            ## Updated Svgl Vue Components
+            ## Updated Svgl Vue Component(s)
 
             Added **${{ steps.count.outputs.total }}** new components:
             ${{ steps.pretty.outputs.formatted }}
 
-            ⏱️ Generation time: ${{ steps.duration.outputs.formatted }}
+            Generation time: ${{ steps.duration.outputs.formatted }}
           commit-message: |
             chore: update svgl vue components
 
