@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.0
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.8...v0.1.0)
+
+### 🏡 Chore
+
+- **workflow:** Update ci, release and update-svgl-components workflows by adding the fetch-depth ([f11a4e3](https://github.com/selemondev/svgl-vue/commit/f11a4e3))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.7
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.7...v0.0.7)
