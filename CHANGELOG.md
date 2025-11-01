@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.5...v0.0.6)
+
+### 💅 Refactors
+
+- Cron schedule ([2564b39](https://github.com/selemondev/svgl-vue/commit/2564b39))
+
+### 🏡 Chore
+
+- **workflow:** Update svgl vue components workflow ([6033a6e](https://github.com/selemondev/svgl-vue/commit/6033a6e))
+- **workflow:** Refactor release workflow] ([0c1fa72](https://github.com/selemondev/svgl-vue/commit/0c1fa72))
+- **workflow:** Refactor CI workflow ([1510fdd](https://github.com/selemondev/svgl-vue/commit/1510fdd))
+- **workflow:** Add the --frozen-lockfile flag to release workflow during dependency install using pnpm ([b87a98c](https://github.com/selemondev/svgl-vue/commit/b87a98c))
+- **workflow:** Add the --frozen-lockfile flag to update-svgl-components workflow during dependency install using pnpm ([d6dcd40](https://github.com/selemondev/svgl-vue/commit/d6dcd40))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.5
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v0.0.4...v0.0.5)
