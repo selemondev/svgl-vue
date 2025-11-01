@@ -1,59 +1,59 @@
 {
-	"name": "@selemondev/svgl-vue",
-	"description": "An optimized package with SVG logos to be used as Vue components ✨",
-	"private": false,
-	"version": "0.0.7",
-	"packageManager": "pnpm@8.15.9",
-	"type": "module",
-	"files": [
-		"dist"
-	],
-	"keywords": [
-		"svgl",
-		"svgl-vue",
-		"logos",
-		"svg",
-		"vue",
-		"nuxt"
-	],
-	"scripts": {
-		"build:package": "tsdown",
-		"dev:build": "tsdown --watch ./src/index.ts",
-		"dev": "tsx ./src/index.ts",
-		"play:dev": "pnpm -C playground dev",
-		"play:build": "pnpm -C playground build",
-		"biome": "biome check --write",
-		"test": "vitest",
-		"coverage": "vitest run --coverage",
-		"generate:components": "pnpm dlx esno scripts/index.ts && pnpm biome",
-		"generate:release": "pnpx changelogen@latest --release && git push --follow-tags",
-		"generate:major:release": "pnpx changelogen@latest --major && git push --follow-tags",
-		"generate:minor:release": "pnpx changelogen@latest --minor && git push --follow-tags",
-		"generate:patch:release": "pnpx changelogen@latest --patch && git push --follow-tags",
-		"bump:version": "pnpx changelogen@latest --bump",
-		"package:beta": "pnpm build:package && pnpm publish --tag beta",
-		"package": "pnpm build:package && pnpm publish --access=public"
-	},
-	"peerDependencies": {
-		"vue": "^3.5.21"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.2.3",
-		"@tsconfig/node20": "^20.1.6",
-		"@types/fs-extra": "^11.0.4",
-		"@types/node": "^24.3.1",
-		"@vue/tsconfig": "^0.8.1",
-		"fs-extra": "^11.3.1",
-		"tsdown": "^0.14.2",
-		"typescript": "^5.9.2",
-		"unplugin-vue": "^6.2.0",
-		"vue-tsc": "^3.0.6"
-	},
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": "./dist/index.js",
-		"./package.json": "./package.json"
-	}
+  "name": "@selemondev/svgl-vue",
+  "description": "An optimized package with SVG logos to be used as Vue components ✨",
+  "private": false,
+  "version": "0.0.7",
+  "packageManager": "pnpm@8.15.9",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "svgl",
+    "svgl-vue",
+    "logos",
+    "svg",
+    "vue",
+    "nuxt"
+  ],
+  "scripts": {
+    "build:package": "tsdown",
+    "dev:build": "tsdown --watch ./src/index.ts",
+    "dev": "tsx ./src/index.ts",
+    "play:dev": "pnpm -C playground dev",
+    "play:build": "pnpm -C playground build",
+    "biome": "biome check --write",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "generate:components": "pnpm dlx esno scripts/index.ts && pnpm biome",
+    "generate:release": "pnpx changelogen@latest --release && git push --follow-tags",
+    "generate:major:release": "pnpx changelogen@latest --major && git push --follow-tags",
+    "generate:minor:release": "pnpx changelogen@latest --minor && git push --follow-tags",
+    "generate:patch:release": "pnpx changelogen@latest --patch && git push --follow-tags",
+    "bump:version": "pnpx changelogen@latest --bump",
+    "package:beta": "pnpm build:package && pnpm publish --tag beta",
+    "package": "pnpm build:package && pnpm publish --access=public"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "@tsconfig/node20": "^20.1.6",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.3.1",
+    "@vue/tsconfig": "^0.8.1",
+    "fs-extra": "^11.3.1",
+    "tsdown": "^0.14.2",
+    "typescript": "^5.9.2",
+    "unplugin-vue": "^6.2.0",
+    "vue-tsc": "^3.0.6"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  }
 }
