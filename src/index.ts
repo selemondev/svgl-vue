@@ -27,6 +27,7 @@ export { default as SvglApidogLogo } from "./components/Apidog.vue";
 export { default as SvglApolloioLogo } from "./components/Apolloio.vue";
 export { default as SvglAppleLogo } from "./components/Apple.vue";
 export { default as SvglAppleMusicLogo } from "./components/AppleMusic.vue";
+export { default as SvglAppStoreLogo } from "./components/AppStore.vue";
 export { default as SvglAppwriteLogo } from "./components/Appwrite.vue";
 export { default as SvglArcLogo } from "./components/Arc.vue";
 export { default as SvglArkUILogo } from "./components/ArkUI.vue";
