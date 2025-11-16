@@ -441,7 +441,6 @@ export { default as SvglSkyLogo } from "./components/Sky.vue";
 export { default as SvglSkypeLogo } from "./components/Skype.vue";
 export { default as SvglSlackLogo } from "./components/Slack.vue";
 export { default as SvglSnapchatLogo } from "./components/Snapchat.vue";
-export { default as SvglSocketIOLogo } from "./components/SocketIO.vue";
 export { default as SvglSocketioLogo } from "./components/Socketio.vue";
 export { default as SvglSolanaLogo } from "./components/Solana.vue";
 export { default as SvglSolderaLogo } from "./components/Soldera.vue";
