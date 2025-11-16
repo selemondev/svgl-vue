@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v1.0.1...v1.0.2)
+
+### 🏡 Chore
+
+- Update svgl vue components ([166fa7e](https://github.com/selemondev/svgl-vue/commit/166fa7e))
+- Update svgl vue components ([c66da1b](https://github.com/selemondev/svgl-vue/commit/c66da1b))
+- Update svgl vue components ([2a72c60](https://github.com/selemondev/svgl-vue/commit/2a72c60))
+- Update svgl vue components ([218307b](https://github.com/selemondev/svgl-vue/commit/218307b))
+- Update svgl vue components ([33c2aa8](https://github.com/selemondev/svgl-vue/commit/33c2aa8))
+- Add new components ([402b818](https://github.com/selemondev/svgl-vue/commit/402b818))
+
+### ❤️ Contributors
+
+- Selemondev ([@selemondev](https://github.com/selemondev))
+
 ## v1.0.1
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v1.0.0...v1.0.1)
