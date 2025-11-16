@@ -344,6 +344,7 @@ export { default as SvglOpenWebUILogo } from "./components/OpenWebUI.vue";
 export { default as SvglOperaLogo } from "./components/Opera.vue";
 export { default as SvglOxcLogo } from "./components/Oxc.vue";
 export { default as SvglPandaCSSLogo } from "./components/PandaCSS.vue";
+export { default as SvglPaperLogo } from "./components/Paper.vue";
 export { default as SvglParcelLogo } from "./components/Parcel.vue";
 export { default as SvglPatreonLogo } from "./components/Patreon.vue";
 export { default as SvglPayloadCMSLogo } from "./components/PayloadCMS.vue";
