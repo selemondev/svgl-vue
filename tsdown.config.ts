@@ -2,9 +2,7 @@ import { defineConfig } from 'tsdown';
 import Vue from 'unplugin-vue/rolldown';
 export default defineConfig({
 	entry: ['./src/index.ts'],
-	format: ['esm'],
-	clean: true,
-	minify: true,
+	treeshake: false,
 	dts: {
 		vue: true,
 	},
