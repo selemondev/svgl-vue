@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.0.1
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.0...v2.0.1)
+
+### 🔥 Performance
+
+- **bundler:** Produce tree-shakeable lib output ([c9d851d](https://github.com/selemondev/svgl-vue/commit/c9d851d))
+
+### 🏡 Chore
+
+- Add new component ([f9fcb78](https://github.com/selemondev/svgl-vue/commit/f9fcb78))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v1.0.3
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v1.0.2...v1.0.3)
