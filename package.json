@@ -16,6 +16,7 @@
     "vue",
     "nuxt"
   ],
+  "sideEffects": false,
   "scripts": {
     "build:package": "tsdown",
     "dev:build": "tsdown --watch ./src/index.ts",
