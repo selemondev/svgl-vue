@@ -5,8 +5,9 @@
  </h1>
 </p>
 
-<!-- automd:badges color="green" license name="@selemondev/svgl-vue" packagephobia -->
 
+<!-- automd:badges color="green" license name="@selemondev/svgl-vue" packagephobia -->
+[![CI](https://github.com/selemondev/svgl-vue/actions/workflows/ci.yml/badge.svg)](https://github.com/selemondev/svgl-vue/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@selemondev/svgl-vue?color=green)](https://npmjs.com/package/@selemondev/svgl-vue)
 [![npm downloads](https://img.shields.io/npm/dm/@selemondev/svgl-vue?color=green)](https://npm.chart.dev/@selemondev/svgl-vue)
 [![install size](https://badgen.net/packagephobia/install/@selemondev/svgl-vue?color=green)](https://packagephobia.com/result?p=@selemondev/svgl-vue)
