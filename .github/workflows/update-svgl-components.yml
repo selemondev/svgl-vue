@@ -103,6 +103,8 @@ jobs:
         if: steps.changes.outputs.has_changes == 'true' && steps.count.outputs.total != '0'
         uses: peter-evans/create-pull-request@v7
         with:
+          add-paths: |
+            src/components/**
           branch: update-svgl-vue-components
           branch-suffix: timestamp
           base: main
