@@ -25,7 +25,6 @@
 ### ❤️ Contributors
 
 - Selemondev ([@selemondev](https://github.com/selemondev))
-- Selemon Brahanu ([@selemondev](https://github.com/selemondev))
 
 ## v2.0.1
 
@@ -41,7 +40,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v1.0.3
 
@@ -89,7 +88,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.7
 
@@ -101,7 +100,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.7
 
@@ -125,7 +124,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.6
 
@@ -145,7 +144,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.5
 
@@ -171,7 +170,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.4
 
@@ -188,7 +187,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.3
 
@@ -213,7 +212,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.2
 
@@ -225,7 +224,7 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
 ## v0.0.1
 
@@ -236,5 +235,5 @@
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- Selemondev ([@selemondev](https://github.com/selemondev))
 
