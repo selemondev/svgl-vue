@@ -8,6 +8,10 @@
   "files": [
     "dist"
   ],
+ 	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/selemondev/svgl-vue.git"
+	},
   "keywords": [
     "svgl",
     "svgl-vue",
@@ -21,8 +25,6 @@
     "build:package": "tsdown",
     "dev:build": "tsdown --watch ./src/index.ts",
     "dev": "tsx ./src/index.ts",
-    "play:dev": "pnpm -C playground dev",
-    "play:build": "pnpm -C playground build",
     "biome": "biome check --write",
     "test": "vitest",
     "coverage": "vitest run --coverage",
