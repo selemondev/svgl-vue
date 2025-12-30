@@ -2,16 +2,16 @@
   "name": "@selemondev/svgl-vue",
   "description": "An optimized package with SVG logos to be used as Vue components ✨",
   "private": false,
-  "version": "2.0.1",
+  "version": "2.0.2",
   "packageManager": "pnpm@8.15.9",
   "type": "module",
   "files": [
     "dist"
   ],
- 	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/selemondev/svgl-vue.git"
-	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selemondev/svgl-vue.git"
+  },
   "keywords": [
     "svgl",
     "svgl-vue",
@@ -29,7 +29,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "generate:components": "pnpm dlx esno scripts/index.ts && pnpm biome",
-    "generate:release": "pnpx changelogen@latest --release && git push --follow-tags",
+    "generate:release": "pnpx changelogen@latest --release --hide-author-email && git push --follow-tags",
     "generate:major:release": "pnpx changelogen@latest --major && git push --follow-tags",
     "generate:minor:release": "pnpx changelogen@latest --minor && git push --follow-tags",
     "generate:patch:release": "pnpx changelogen@latest --patch && git push --follow-tags",
