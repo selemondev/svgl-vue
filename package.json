@@ -8,6 +8,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selemondev/svgl-vue.git"
+  },
   "keywords": [
     "svgl",
     "svgl-vue",
