@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v2.0.3
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.1...v2.0.3)
+
+### 🩹 Fixes
+
+- Workflow release tag value and include components path ([0a9e8fb](https://github.com/selemondev/svgl-vue/commit/0a9e8fb))
+
+### 📖 Documentation
+
+- Update README.md to include CI and badge links ([7929e2f](https://github.com/selemondev/svgl-vue/commit/7929e2f))
+
+### 🏡 Chore
+
+- Update svgl vue components ([75d3ed5](https://github.com/selemondev/svgl-vue/commit/75d3ed5))
+- Update svgl vue components ([b32e810](https://github.com/selemondev/svgl-vue/commit/b32e810))
+- Add OIDC permissions to workflow ([30a47a7](https://github.com/selemondev/svgl-vue/commit/30a47a7))
+- Update package.json scripts ([9f681d0](https://github.com/selemondev/svgl-vue/commit/9f681d0))
+- Configure changelog generation ([986ad83](https://github.com/selemondev/svgl-vue/commit/986ad83))
+- Update Svgl components ([065a66a](https://github.com/selemondev/svgl-vue/commit/065a66a))
+
+### ❤️ Contributors
+
+- Selemondev ([@selemondev](https://github.com/selemondev))
+- Selemon Brahanu ([@selemondev](https://github.com/selemondev))
+
 ## v2.0.1
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.0...v2.0.1)
