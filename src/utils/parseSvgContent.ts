@@ -24,8 +24,13 @@ export const parseSvgContent = (content: string) => {
 		}
 	}
 
-	// Remove <style> tags from the SVG
-	let templateContent = content.replace(styleTagRegex, "");
+	// Remove <style> tags from the SVG (apply repeatedly to avoid incomplete sanitization)
+	let templateContent = content;
+	let previousContent: string;
+	do {
+		previousContent = templateContent;
+		templateContent = templateContent.replace(styleTagRegex, "");
+	} while (templateContent !== previousContent);
 
 	// Modify <svg> tag:
 	// - remove static width/height
