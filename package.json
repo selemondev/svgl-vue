@@ -42,19 +42,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.3",
-    "@tsconfig/node20": "^20.1.6",
+    "@tsconfig/node20": "^20.1.9",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^24.3.1",
+    "@types/node": "^24.10.13",
     "@vue/tsconfig": "^0.8.1",
-    "fs-extra": "^11.3.1",
-    "tsdown": "^0.14.2",
-    "typescript": "^5.9.2",
+    "fs-extra": "^11.3.3",
+    "tsdown": "^0.20.3",
+    "typescript": "^5.9.3",
     "unplugin-vue": "^6.2.0",
-    "vue-tsc": "^3.0.6"
+    "vue-tsc": "^3.2.4"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index-Dnq0l9GR.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
