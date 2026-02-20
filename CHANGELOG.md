@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v2.0.4
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.3...v2.0.4)
+
+### 🏡 Chore
+
+- Replace email with github username ([73cc7aa](https://github.com/selemondev/svgl-vue/commit/73cc7aa))
+- Update svgl vue components ([244d484](https://github.com/selemondev/svgl-vue/commit/244d484))
+- Update svgl vue components ([e1aa905](https://github.com/selemondev/svgl-vue/commit/e1aa905))
+- Update svgl vue components ([a3a418e](https://github.com/selemondev/svgl-vue/commit/a3a418e))
+- Update svgl vue components ([2e8e7e3](https://github.com/selemondev/svgl-vue/commit/2e8e7e3))
+- Update svgl vue components ([8629dce](https://github.com/selemondev/svgl-vue/commit/8629dce))
+- Update Svgl-vue components ([959be8e](https://github.com/selemondev/svgl-vue/commit/959be8e))
+- Update dependencies ([4f8ce02](https://github.com/selemondev/svgl-vue/commit/4f8ce02))
+
+### ❤️ Contributors
+
+- Selemondev ([@selemondev](https://github.com/selemondev))
+
 ## v2.0.3
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.1...v2.0.3)
