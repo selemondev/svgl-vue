@@ -1,0 +1,24 @@
+
+<script setup lang="ts">
+withDefaults(
+	defineProps<{
+		width?: string | number;
+		height?: string | number;
+	}>(),
+	{
+		width: 50,
+		height: 50,
+	},
+);
+</script>
+<template>
+    
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" :key="width" :width="width" :height="height" :style="{
+      width: width + 'px', height: height + 'px'
+      }">
+<rect width="512" height="512" fill="#FDFCFC"/>
+<path d="M320 224V352H192V224H320Z" fill="#E6E5E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M384 416H128V96H384V416ZM320 160H192V352H320V160Z" fill="#17181C"/>
+</svg>
+</template>
+    
