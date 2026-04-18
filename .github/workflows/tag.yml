@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'src/components/**'
+      - 'src/index.ts'
 
 permissions:
   contents: write

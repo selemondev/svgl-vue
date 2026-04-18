@@ -24,7 +24,7 @@ jobs:
           echo "Files changed in this PR:"
           echo "$CHANGED"
           echo ""
-          BAD=$(echo "$CHANGED" | grep -v '^src/components/.*\.vue$' || true)
+          BAD=$(echo "$CHANGED" | grep -v -E '^(src/components/.*\.vue|src/index\.ts)$' || true)
           if [ -n "$BAD" ]; then
             echo "❌ PR touches files outside src/components/*.vue:"
             echo "$BAD"

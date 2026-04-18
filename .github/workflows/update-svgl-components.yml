@@ -98,6 +98,18 @@ jobs:
       - name: Reset lockfile changes
         if: steps.changes.outputs.has_changes == 'true'
         run: git checkout -- pnpm-lock.yaml
+        
+      - name: Build PR title
+        if: steps.changes.outputs.has_changes == 'true' && steps.count.outputs.total != '0'
+        id: title
+        run: |
+          NAMES=$(echo "${{ steps.list.outputs.names }}" | paste -sd ', ' -)
+          COUNT=${{ steps.count.outputs.total }}
+          if [ "$COUNT" -le 3 ]; then
+            echo "text=feat: add $NAMES (${{ steps.duration.outputs.formatted }})" >> $GITHUB_OUTPUT
+          else
+            echo "text=feat: add $COUNT svgl components (${{ steps.duration.outputs.formatted }})" >> $GITHUB_OUTPUT
+          fi
 
       - name: Create Pull Request
         if: steps.changes.outputs.has_changes == 'true' && steps.count.outputs.total != '0'
@@ -105,10 +117,11 @@ jobs:
         with:
           add-paths: |
             src/components/**
+            src/index.ts
           branch: update-svgl-vue-components
           branch-suffix: timestamp
           base: main
-          title: 'feat: add ${{ steps.count.outputs.total }} svgl component(s) (${{ steps.duration.outputs.formatted }})'
+          title: ${{ steps.title.outputs.text }}
           body: |
             ## Updated Svgl Vue Component(s)
 
