@@ -34,7 +34,7 @@ jobs:
           echo "✅ All changes confined to src/components/*.vue"
 
       - name: Warn when fallback token is used
-        if: ${{ env.AUTOMATION_TOKEN == '' }}
+        if: env.AUTOMATION_TOKEN == ''
         run: echo "::warning::AUTOMATION_TOKEN is not configured. Falling back to GITHUB_TOKEN."
 
       - name: Enable auto-merge
