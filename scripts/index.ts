@@ -4,6 +4,9 @@ import { componentTemplate } from '../src/utils'
 import path from 'node:path'
 import fs from 'fs-extra'
 import type { Svgl } from '../src/types/index'
+interface SpecialCase {
+  [key: string]: string
+}
 const regex =
   /import\s+type\s+\{\s*iSVG\s*\}\s+from\s+["']@\/types\/svg["'];?\s*[\r\n]+export\s+const\s+svgs:\s*iSVG\[\]\s*=\s*\[([\s\S]*)\](?=\s*;?\s*(?:\r?\n|$))/
 
@@ -92,7 +95,7 @@ const getSvgUrl = (svgInfo: Svgl) => {
 const getFileUrlToPath = fileURLToPath(import.meta.url)
 const getRootPath = path.resolve(getFileUrlToPath, '..', '..')
 const targetDir = path.join(getRootPath, 'src', 'components')
-const specialCases = {
+const specialCases: SpecialCase = {
   'C#.vue': 'CSharp',
   'C++.vue': 'CPlusPlus',
   'CSS(New).vue': 'CSSNew',
