@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   guard:
-    if: startsWith(github.head_ref, 'update-svgl-vue-components')
+    if: startsWith(github.head_ref, 'update-svgl-vue-components') && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     env:
       AUTOMATION_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
