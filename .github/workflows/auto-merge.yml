@@ -1,0 +1,37 @@
+name: Auto-merge svgl PRs
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  guard:
+    if: startsWith(github.head_ref, 'update-svgl-vue-components')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify PR only touches allowed paths
+        run: |
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          echo "Files changed in this PR:"
+          echo "$CHANGED"
+          echo ""
+          BAD=$(echo "$CHANGED" | grep -v '^src/components/.*\.vue$' || true)
+          if [ -n "$BAD" ]; then
+            echo "❌ PR touches files outside src/components/*.vue:"
+            echo "$BAD"
+            exit 1
+          fi
+          echo "✅ All changes confined to src/components/*.vue"
+
+      - name: Enable auto-merge
+        run: gh pr merge ${{ github.event.pull_request.number }} --squash --auto --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
