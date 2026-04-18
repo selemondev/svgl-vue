@@ -12,6 +12,8 @@ jobs:
   guard:
     if: startsWith(github.head_ref, 'update-svgl-vue-components')
     runs-on: ubuntu-latest
+    env:
+      AUTOMATION_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,10 +34,10 @@ jobs:
           echo "✅ All changes confined to src/components/*.vue"
 
       - name: Warn when fallback token is used
-        if: ${{ secrets.AUTOMATION_TOKEN == '' }}
+        if: ${{ env.AUTOMATION_TOKEN == '' }}
         run: echo "::warning::AUTOMATION_TOKEN is not configured. Falling back to GITHUB_TOKEN."
 
       - name: Enable auto-merge
         run: gh pr merge ${{ github.event.pull_request.number }} --squash --auto --delete-branch
         env:
-          GH_TOKEN: ${{ secrets.AUTOMATION_TOKEN || github.token }}
+          GH_TOKEN: ${{ env.AUTOMATION_TOKEN || github.token }}
