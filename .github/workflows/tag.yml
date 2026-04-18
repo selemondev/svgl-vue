@@ -33,7 +33,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Bump version, generate changelog, tag, push
-        run: pnpm changelogen --release --push
+      - name: Release
+        run: pnpm generate:release
         env:
           GITHUB_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
