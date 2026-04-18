@@ -4,14 +4,12 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened]
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   guard:
     if: startsWith(github.head_ref, 'update-svgl-vue-components') && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,6 +29,14 @@ jobs:
           fi
           echo "✅ All changes confined to src/components/*.vue"
 
+  merge:
+    needs: guard
+    if: needs.guard.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
       - name: Enable auto-merge
         run: gh pr merge ${{ github.event.pull_request.number }} --squash --auto --delete-branch
         env:
