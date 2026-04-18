@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.2.0
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v2.1.0...v2.2.0)
+
+### 🚀 Enhancements
+
+- Add new components ([fec0bfd](https://github.com/selemondev/svgl-vue/commit/fec0bfd))
+
+### 🏡 Chore
+
+- **release:** V2.1.0 ([c1b67b0](https://github.com/selemondev/svgl-vue/commit/c1b67b0))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v2.1.0
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.6...v2.1.0)
