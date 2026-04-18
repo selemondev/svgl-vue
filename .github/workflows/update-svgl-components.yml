@@ -108,7 +108,7 @@ jobs:
           branch: update-svgl-vue-components
           branch-suffix: timestamp
           base: main
-          title: 'chore: update svgl vue components (added ${{ steps.count.outputs.total }} new components, took ${{ steps.duration.outputs.formatted }})'
+          title: 'feat: add ${{ steps.count.outputs.total }} svgl component(s) (${{ steps.duration.outputs.formatted }})'
           body: |
             ## Updated Svgl Vue Component(s)
 
@@ -117,11 +117,10 @@ jobs:
 
             Generation time: ${{ steps.duration.outputs.formatted }}
           commit-message: |
-            chore: update svgl vue components
-
-            Added ${{ steps.count.outputs.total }} new components:
-            ${{ steps.pretty.outputs.formatted }}
-
-            Generation time: ${{ steps.duration.outputs.formatted }}
+              feat: add ${{ steps.count.outputs.total }} svgl component(s)
+            
+              ${{ steps.pretty.outputs.formatted }}
+            
+              Generation time: ${{ steps.duration.outputs.formatted }}
           delete-branch: true
           token: ${{ secrets.AUTOMATION_TOKEN }}

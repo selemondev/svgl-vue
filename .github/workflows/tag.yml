@@ -1,0 +1,39 @@
+name: Tag release
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/components/**'
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.AUTOMATION_TOKEN }}
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Bump version, generate changelog, tag, push
+        run: pnpm changelogen --release --push
+        env:
+          GITHUB_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
