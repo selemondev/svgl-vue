@@ -31,7 +31,6 @@ jobs:
 
   merge:
     needs: guard
-    if: needs.guard.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
