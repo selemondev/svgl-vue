@@ -1,6 +1,51 @@
 # Changelog
 
 
+## v2.0.6
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.5...v2.0.6)
+
+### 🩹 Fixes
+
+- Checkout refs ([3bcedb5](https://github.com/selemondev/svgl-vue/commit/3bcedb5))
+- Fallback to GITHUB_TOKEN when automation token is missing ([8b4685b](https://github.com/selemondev/svgl-vue/commit/8b4685b))
+- Remove misplaced token env from warning step ([b66a696](https://github.com/selemondev/svgl-vue/commit/b66a696))
+- Use expression syntax for workflow secret guard ([3a4844a](https://github.com/selemondev/svgl-vue/commit/3a4844a))
+- Use env-based secret checks in auto-merge workflow ([c09399a](https://github.com/selemondev/svgl-vue/commit/c09399a))
+- Use GITHUB_TOKEN for auto-merge auth ([c31ce05](https://github.com/selemondev/svgl-vue/commit/c31ce05))
+- Scope auto-merge token permissions by job ([744d08b](https://github.com/selemondev/svgl-vue/commit/744d08b))
+- Rely on needs success for merge job gating ([37fcb5a](https://github.com/selemondev/svgl-vue/commit/37fcb5a))
+
+### 💅 Refactors
+
+- Auto-merge workflow ([d4400dd](https://github.com/selemondev/svgl-vue/commit/d4400dd))
+- Switch GH_TOKEN to AUTOMATION_TOKEN ([f21b11d](https://github.com/selemondev/svgl-vue/commit/f21b11d))
+- Auto-merge workflow ([96ea043](https://github.com/selemondev/svgl-vue/commit/96ea043))
+- Github workflows ([f1632cf](https://github.com/selemondev/svgl-vue/commit/f1632cf))
+- Update Tag workflow ([3d0a4b4](https://github.com/selemondev/svgl-vue/commit/3d0a4b4))
+- Update Release workflow ([75702f0](https://github.com/selemondev/svgl-vue/commit/75702f0))
+
+### 🏡 Chore
+
+- Update svgl vue components ([28bd737](https://github.com/selemondev/svgl-vue/commit/28bd737))
+- Update svgl vue components ([a10b8e4](https://github.com/selemondev/svgl-vue/commit/a10b8e4))
+- Update dependencies ([d7110d6](https://github.com/selemondev/svgl-vue/commit/d7110d6))
+- Add auto-merge workflow ([ba11071](https://github.com/selemondev/svgl-vue/commit/ba11071))
+- Add CODEOWNERS ([b1a0b17](https://github.com/selemondev/svgl-vue/commit/b1a0b17))
+- Revert to automation token instead of gh token for auto CI run ([78ea8ba](https://github.com/selemondev/svgl-vue/commit/78ea8ba))
+- Update svgl vue components ([#94](https://github.com/selemondev/svgl-vue/pull/94))
+- Remove Cerebras for clean re-gen ([b176fb9](https://github.com/selemondev/svgl-vue/commit/b176fb9))
+
+### 🎨 Styles
+
+- Simplify workflow token fallback expressions ([a6497ab](https://github.com/selemondev/svgl-vue/commit/a6497ab))
+- Simplify env check in workflow condition ([1af5de3](https://github.com/selemondev/svgl-vue/commit/1af5de3))
+
+### ❤️ Contributors
+
+- Selemondev ([@selemondev](https://github.com/selemondev))
+- Selemon Brahanu ([@selemondev](https://github.com/selemondev))
+
 ## v2.0.5
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v2.0.4...v2.0.5)
