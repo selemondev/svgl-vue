@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+@plugin 'tailwindcss-animate';
+
+@theme inline {
+  --font-geist: 'Geist', system-ui, sans-serif;
+}
+
+@theme {
+  --background: oklch(0.9753 0.004 106.47);
+  --animate-marquee-left: marquee-left var(--duration, 40s) linear infinite;
+  --animate-marquee-up: marquee-up var(--duration, 40s) linear infinite;
+  @keyframes marquee-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .secondary-text {
+    @apply text-[#515158];
+  }
+
+  .icon {
+    @apply text-gray-600 hover:text-black transition-colors duration-200 ease-in;
+  }
+}

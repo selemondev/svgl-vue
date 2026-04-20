@@ -1,0 +1,59 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "@lib/utils";
+
+interface Props extends HTMLAttributes<"div"> {
+  direction?: "left" | "up";
+  pauseOnHover?: boolean;
+  reverse?: boolean;
+  fade?: boolean;
+  innerClassName?: string;
+  numberOfCopies?: number;
+}
+
+const {
+  direction = "left",
+  pauseOnHover = false,
+  reverse = false,
+  fade = false,
+  innerClassName,
+  numberOfCopies = 2,
+  class: className,
+  ...rest
+} = Astro.props;
+
+const isHorizontal = direction === "left";
+
+const maskValue = fade
+  ? `linear-gradient(${isHorizontal ? "to right" : "to bottom"}, transparent 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, transparent 100%)`
+  : undefined;
+
+const outerClasses = cn(
+  "group flex gap-4 overflow-hidden",
+  isHorizontal ? "flex-row" : "flex-col",
+  className,
+);
+
+const innerClasses = cn(
+  "flex justify-around gap-4 [--gap:1rem] shrink-0",
+  isHorizontal ? "animate-marquee-left flex-row" : "animate-marquee-up flex-col",
+  pauseOnHover && "group-hover:[animation-play-state:paused]",
+  reverse && "[animation-direction:reverse]",
+  innerClassName,
+);
+---
+
+<div
+  class={outerClasses}
+  style={maskValue ? `mask-image:${maskValue};-webkit-mask-image:${maskValue}` : undefined}
+  {...rest}
+>
+  {Array.from({ length: numberOfCopies }, (_, i) => i).map((i) => (
+    <div>
+      <div class={innerClasses}>
+        <slot />
+      </div>
+    </div>
+  ))}
+</div>
+

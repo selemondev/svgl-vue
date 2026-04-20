@@ -23,8 +23,9 @@
   "sideEffects": false,
   "scripts": {
     "build:package": "tsdown",
-    "dev:build": "tsdown --watch ./src/index.ts",
-    "dev": "tsx ./src/index.ts",
+    "build:docs": "pnpm --filter docs build",
+    "build:preview": "pnpm --filter docs preview",
+    "dev": "tsdown --watch ./src/index.ts",
     "biome": "biome check --write",
     "test": "vitest",
     "coverage": "vitest run --coverage",

@@ -37,4 +37,4 @@ jobs:
         run: pnpm build:package
 
       - name: Publish to npm
-        run: pnpm publish --access public --no-git-checks --provenance
+        run: pnpm --filter @selemondev/svgl-vue publish --access public --no-git-checks --provenance

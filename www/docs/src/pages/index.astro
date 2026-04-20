@@ -1,0 +1,160 @@
+---
+import '@styles/global.css'
+import Marquee from '@components/ui/marquee-component.astro'
+import CustomCodeBlock from '@components/ui/custom-code-block.astro'
+import UIContainer from '@components/ui/ui-container.astro'
+import TwitterIcon from '@components/ui/twitter-icon.astro'
+import GithubIcon from '@components/ui/github-icon.astro'
+import {
+  SvglVercelLogo,
+  SvglRaycastLogo,
+  SvglCodexLogo,
+  SvglAnthropicLogo,
+  SvglStripeLogo,
+  SvglViteLogo,
+  SvglMintlifyLogo,
+  SvglCursorLogo,
+  SvglRspackLogo,
+  SvglGhosttyLogo,
+  SvglBoltLogo,
+  SvglBlueskyLogo,
+  SvglRaspberryPILogo,
+  SvglElysiaJSLogo,
+  SvglVitestLogo,
+  SvglRemixLogo,
+  SvglHonoLogo,
+  SvglQwikLogo,
+  SvglFreshLogo,
+  SvglPostHogLogo,
+  SvglGoogleMapsLogo,
+  SvglSafariLogo,
+  SvglGoogleMeetLogo,
+  SvglGitHubLogo,
+  SvglClerkLogo,
+  SvglStackOverflowLogo,
+} from '@selemondev/svgl-vue'
+const installCmd = `<script setup lang="ts">
+import { SvglVueLogo } from '@selemondev/svgl-vue';
+</script>
+<template>
+  <SvglVueLogo :height="200" :width="200" />
+</template>`
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://api.iconify.design/material-icon-theme:svg.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+    />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="A beautiful library with Svg logos for Vue 3"
+    />
+    <title>Svgl Vue</title>
+  </head>
+  <body
+    class="font-geist max-w-3xl mx-auto px-2 w-full mt-26 mb-6 text-zinc-800 bg-gray-50"
+  >
+    <section class="flex flex-col items-center space-y-2">
+      <h1 class="font-semibold text-xl lg:text-4xl">Svgl Vue</h1>
+      <p class="secondary-text text-center">
+        A beautiful library of Svg logos for Vue 3
+      </p>
+      <div class="py-4 flex flex-col space-y-8 w-80 md:w-xl">
+        <Marquee fade>
+          <div class="flex items-center space-x-6">
+            <SvglVercelLogo />
+            <SvglRaycastLogo />
+            <SvglCodexLogo />
+            <SvglAnthropicLogo />
+            <SvglStripeLogo />
+            <SvglViteLogo />
+            <SvglMintlifyLogo />
+            <SvglCursorLogo />
+            <SvglRspackLogo />
+            <SvglGhosttyLogo />
+            <SvglBoltLogo />
+            <SvglBlueskyLogo />
+            <SvglRaspberryPILogo />
+          </div>
+        </Marquee>
+        <Marquee fade reverse>
+          <div class="flex items-center space-x-6">
+            <SvglElysiaJSLogo />
+            <SvglVitestLogo />
+            <SvglRemixLogo />
+            <SvglStackOverflowLogo />
+            <SvglHonoLogo />
+            <SvglQwikLogo />
+            <SvglGitHubLogo />
+            <SvglClerkLogo />
+            <SvglFreshLogo />
+            <SvglPostHogLogo />
+            <SvglGoogleMapsLogo />
+            <SvglSafariLogo />
+            <SvglGoogleMeetLogo />
+          </div>
+        </Marquee>
+      </div>
+      <UIContainer>
+        <h1 class="font-medium text-lg">Installation</h1>
+        <CustomCodeBlock
+          lang="bash"
+          code={'pnpm add @selemondev/svgl-vue'}
+        />
+      </UIContainer>
+
+      <UIContainer>
+        <h1 class="font-medium text-lg">Usage</h1>
+        <CustomCodeBlock lang="html" code={installCmd} />
+      </UIContainer>
+
+      <UIContainer>
+        <h1 class="font-medium text-lg">Feedback</h1>
+        <p class="secondary-text text-sm">
+          Found an issue? Submit it
+          <a
+            rel="noopener noreferrer"
+            href="https://github.com/selemondev/svgl-vue/issues"
+            class="text-blue-500 hover:text-blue-600 transition-colors duration-200 ease-in decoration-dotted underline-offset-[5px] underline cursor-pointer"
+          >
+            here
+          </a>.
+        </p>
+      </UIContainer>
+      <UIContainer>
+        <div class="flex items-center justify-start space-x-2">
+          <a
+            href="https://github.com/selemondev/svgl-vue/issues"
+            title="Github"
+            rel="noopener noreferrer"
+            aria-label="Selemondev on GitHub"
+          >
+            <GithubIcon class="icon" />
+          </a>
+          <a
+            href="https://twitter.com/selemondev"
+            title="Twitter"
+            rel="noopener noreferrer"
+            aria-label="Selemondev on Twitter"
+          >
+            <TwitterIcon class="icon" />
+          </a>
+        </div>
+      </UIContainer>
+    </section>
+  </body>
+</html>
