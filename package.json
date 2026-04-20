@@ -22,8 +22,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build:package": "tsdown",
-    "build:docs": "pnpm build:package && pnpm --filter docs build",
+    "build:package": "tsdown && pnpm --filter docs build",
     "build:preview": "pnpm --filter docs preview",
     "dev": "tsdown --watch ./src/index.ts",
     "biome": "biome check --write",
