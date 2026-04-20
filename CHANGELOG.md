@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v2.3.0
+
+[compare changes](https://github.com/selemondev/svgl-vue/compare/v2.2.0...v2.3.0)
+
+### 🚀 Enhancements
+
+- Add docs and update release workflow ([bc0f7bd](https://github.com/selemondev/svgl-vue/commit/bc0f7bd))
+
+### 🏡 Chore
+
+- **release:** V2.2.0 ([fb33011](https://github.com/selemondev/svgl-vue/commit/fb33011))
+- Refactor yml workflows ([d572600](https://github.com/selemondev/svgl-vue/commit/d572600))
+- Update docs build command ([ce68618](https://github.com/selemondev/svgl-vue/commit/ce68618))
+- Remove docs build command ([a1175f7](https://github.com/selemondev/svgl-vue/commit/a1175f7))
+- Remove redundant component ([4342a70](https://github.com/selemondev/svgl-vue/commit/4342a70))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v2.2.0
 
 [compare changes](https://github.com/selemondev/svgl-vue/compare/v2.1.0...v2.2.0)
