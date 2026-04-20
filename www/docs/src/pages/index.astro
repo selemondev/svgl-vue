@@ -31,7 +31,7 @@ import {
   SvglGoogleMeetLogo,
   SvglGitHubLogo,
   SvglClerkLogo,
-  SvglStackOverflowLogo,
+  SvglStackOverflowLogo
 } from '@selemondev/svgl-vue'
 const installCmd = `<script setup lang="ts">
 import { SvglVueLogo } from '@selemondev/svgl-vue';
@@ -44,7 +44,10 @@ import { SvglVueLogo } from '@selemondev/svgl-vue';
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://api.iconify.design/material-icon-theme:svg.svg" />
+    <link
+      rel="icon"
+      href="https://api.iconify.design/material-icon-theme:svg.svg"
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -111,10 +114,7 @@ import { SvglVueLogo } from '@selemondev/svgl-vue';
       </div>
       <UIContainer>
         <h1 class="font-medium text-lg">Installation</h1>
-        <CustomCodeBlock
-          lang="bash"
-          code={'pnpm add @selemondev/svgl-vue'}
-        />
+        <CustomCodeBlock lang="bash" code={'pnpm add @selemondev/svgl-vue'} />
       </UIContainer>
 
       <UIContainer>
@@ -134,9 +134,7 @@ import { SvglVueLogo } from '@selemondev/svgl-vue';
             here
           </a>.
         </p>
-      </UIContainer>
-      <UIContainer>
-        <div class="flex items-center justify-start space-x-2">
+        <div class="flex items-center space-x-2">
           <a
             href="https://github.com/selemondev/svgl-vue/issues"
             title="Github"
