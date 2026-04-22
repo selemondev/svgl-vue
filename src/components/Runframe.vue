@@ -1,0 +1,25 @@
+
+<script setup lang="ts">
+withDefaults(
+	defineProps<{
+		width?: string | number;
+		height?: string | number;
+	}>(),
+	{
+		width: 50,
+		height: 50,
+	},
+);
+</script>
+<template>
+    <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" :key="width" :width="width" :height="height" :style="{
+      width: width + 'px', height: height + 'px'
+      }">
+  <rect width="512" height="512" fill="#000000" rx="64"/>
+  <g transform="translate(32, 32) skewX(-10) scale(4.5)">
+    <path d="M 24 28 L 24 72 L 36.5 72 L 36.5 47 L 54 47 L 54 28 L 36.5 28 Z" fill="#ffffff"/>
+    <path d="M 96 28 L 96 72 L 83.5 72 L 83.5 47 L 66 47 L 66 28 L 83.5 28 Z" fill="#ffffff"/>
+  </g>
+</svg>
+</template>
+    
