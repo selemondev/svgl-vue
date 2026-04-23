@@ -597,6 +597,7 @@ export { default as SvglYarnLogo } from "./components/Yarn.vue";
 export { default as SvglYGeekerLogo } from "./components/YGeeker.vue";
 export { default as SvglYouTubeLogo } from "./components/YouTube.vue";
 export { default as SvglYoutubeMusicLogo } from "./components/YoutubeMusic.vue";
+export { default as SvglZaiaEndlessLogo } from "./components/ZaiaEndless.vue";
 export { default as SvglZeaburLogo } from "./components/Zeabur.vue";
 export { default as SvglZedLogo } from "./components/Zed.vue";
 export { default as SvglZenBrowserLogo } from "./components/ZenBrowser.vue";
