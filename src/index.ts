@@ -335,6 +335,7 @@ export { default as SvglMotionLogo } from "./components/Motion.vue";
 export { default as SvglMulesoftLogo } from "./components/Mulesoft.vue";
 export { default as SvglMySQLLogo } from "./components/MySQL.vue";
 export { default as SvglN8nLogo } from "./components/N8n.vue";
+export { default as SvglNanoLogo } from "./components/Nano.vue";
 export { default as SvglNeonLogo } from "./components/Neon.vue";
 export { default as SvglNeovimLogo } from "./components/Neovim.vue";
 export { default as SvglNestJSLogo } from "./components/NestJS.vue";
