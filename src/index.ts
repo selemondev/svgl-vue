@@ -77,6 +77,7 @@ export { default as SvglChromiumLogo } from "./components/Chromium.vue";
 export { default as SvglCiscoLogo } from "./components/Cisco.vue";
 export { default as SvglClaudeAILogo } from "./components/ClaudeAI.vue";
 export { default as SvglClerkLogo } from "./components/Clerk.vue";
+export { default as SvglClickUpLogo } from "./components/ClickUp.vue";
 export { default as SvglCloudflareLogo } from "./components/Cloudflare.vue";
 export { default as SvglCloudflareWorkersLogo } from "./components/CloudflareWorkers.vue";
 export { default as SvglCloudinaryLogo } from "./components/Cloudinary.vue";
