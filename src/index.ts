@@ -636,6 +636,7 @@ export { default as SvglWindowsLogo } from "./components/Windows.vue";
 export { default as SvglWindsurfLogo } from "./components/Windsurf.vue";
 export { default as SvglWordPressLogo } from "./components/WordPress.vue";
 export { default as SvglWorkOSLogo } from "./components/WorkOS.vue";
+export { default as SvglXAILogo } from "./components/XAI.vue";
 export { default as SvglXAIGrokLogo } from "./components/XAIGrok.vue";
 export { default as SvglXataLogo } from "./components/Xata.vue";
 export { default as SvglXboxLogo } from "./components/Xbox.vue";
