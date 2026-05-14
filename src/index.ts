@@ -288,6 +288,7 @@ export { default as SvglKokonutUILogo } from "./components/KokonutUI.vue";
 export { default as SvglKotlinLogo } from "./components/Kotlin.vue";
 export { default as SvglKrakenJSLogo } from "./components/KrakenJS.vue";
 export { default as SvglKubernetesLogo } from "./components/Kubernetes.vue";
+export { default as SvglLangChainLogo } from "./components/LangChain.vue";
 export { default as SvglLaravelLogo } from "./components/Laravel.vue";
 export { default as SvglLayersLogo } from "./components/Layers.vue";
 export { default as SvglLeapWalletLogo } from "./components/LeapWallet.vue";
