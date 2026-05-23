@@ -457,6 +457,7 @@ export { default as SvglPrismaLogo } from "./components/Prisma.vue";
 export { default as SvglProcureLogo } from "./components/Procure.vue";
 export { default as SvglProductHuntLogo } from "./components/ProductHunt.vue";
 export { default as SvglProtonMailLogo } from "./components/ProtonMail.vue";
+export { default as SvglProtonVPNLogo } from "./components/ProtonVPN.vue";
 export { default as SvglPulumiLogo } from "./components/Pulumi.vue";
 export { default as SvglPutioLogo } from "./components/Putio.vue";
 export { default as SvglPyCharmLogo } from "./components/PyCharm.vue";
