@@ -262,6 +262,7 @@ export { default as SvglIntelliJIDEALogo } from "./components/IntelliJIDEA.vue";
 export { default as SvglIntelloLogo } from "./components/Intello.vue";
 export { default as SvglInterfereLogo } from "./components/Interfere.vue";
 export { default as SvglIntlayerLogo } from "./components/Intlayer.vue";
+export { default as SvglIvyFrameworkLogo } from "./components/IvyFramework.vue";
 export { default as SvglJasmineLogo } from "./components/Jasmine.vue";
 export { default as SvglJavaLogo } from "./components/Java.vue";
 export { default as SvglJavaScriptLogo } from "./components/JavaScript.vue";
