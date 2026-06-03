@@ -104,6 +104,7 @@ export { default as SvglCohereLogo } from "./components/Cohere.vue";
 export { default as SvglCoinbaseLogo } from "./components/Coinbase.vue";
 export { default as SvglColdFusionLogo } from "./components/ColdFusion.vue";
 export { default as SvglColdFusionBuilderLogo } from "./components/ColdFusionBuilder.vue";
+export { default as SvglConductorLogo } from "./components/Conductor.vue";
 export { default as SvglConnectLogo } from "./components/Connect.vue";
 export { default as SvglConvexLogo } from "./components/Convex.vue";
 export { default as SvglCourseraLogo } from "./components/Coursera.vue";
