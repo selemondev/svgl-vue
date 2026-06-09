@@ -445,6 +445,7 @@ export { default as SvglPostCSSLogo } from "./components/PostCSS.vue";
 export { default as SvglPostgreSQLLogo } from "./components/PostgreSQL.vue";
 export { default as SvglPostHogLogo } from "./components/PostHog.vue";
 export { default as SvglPostmanLogo } from "./components/Postman.vue";
+export { default as SvglPostquedLogo } from "./components/Postqued.vue";
 export { default as SvglPowerShellLogo } from "./components/PowerShell.vue";
 export { default as SvglPowerSyncLogo } from "./components/PowerSync.vue";
 export { default as SvglPowerToysLogo } from "./components/PowerToys.vue";
