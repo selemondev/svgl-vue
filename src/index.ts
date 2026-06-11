@@ -226,6 +226,7 @@ export { default as SvglGradioLogo } from "./components/Gradio.vue";
 export { default as SvglGrafanaLogo } from "./components/Grafana.vue";
 export { default as SvglGranolaLogo } from "./components/Granola.vue";
 export { default as SvglGraphQLLogo } from "./components/GraphQL.vue";
+export { default as SvglGridaLogo } from "./components/Grida.vue";
 export { default as SvglGrokLogo } from "./components/Grok.vue";
 export { default as SvglGroqLogo } from "./components/Groq.vue";
 export { default as SvglHackTheBoxLogo } from "./components/HackTheBox.vue";
