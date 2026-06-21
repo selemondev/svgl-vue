@@ -164,6 +164,7 @@ export { default as SvglEpicGamesLogo } from "./components/EpicGames.vue";
 export { default as SvglESLintLogo } from "./components/ESLint.vue";
 export { default as SvglEsbuildLogo } from "./components/Esbuild.vue";
 export { default as SvglEthereumLogo } from "./components/Ethereum.vue";
+export { default as SvglEveLogo } from "./components/Eve.vue";
 export { default as SvglExomeLogo } from "./components/Exome.vue";
 export { default as SvglExperiencePlatformLogo } from "./components/ExperiencePlatform.vue";
 export { default as SvglExpoLogo } from "./components/Expo.vue";
