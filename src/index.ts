@@ -433,6 +433,7 @@ export { default as SvglPitchLogo } from "./components/Pitch.vue";
 export { default as SvglPlainSignalLogo } from "./components/PlainSignal.vue";
 export { default as SvglPlanetScaleLogo } from "./components/PlanetScale.vue";
 export { default as SvglPlatziLogo } from "./components/Platzi.vue";
+export { default as SvglPlausibleAnalyticsLogo } from "./components/PlausibleAnalytics.vue";
 export { default as SvglPlayStationLogo } from "./components/PlayStation.vue";
 export { default as SvglPlaywrightLogo } from "./components/Playwright.vue";
 export { default as SvglPM2Logo } from "./components/PM2.vue";
