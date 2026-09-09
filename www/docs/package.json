@@ -15,7 +15,7 @@
     "@astrojs/vue": "^6.0.1",
     "@selemondev/svgl-vue": "workspace:*",
     "@tailwindcss/vite": "^4.2.2",
-    "astro": "^6.1.8",
+    "astro": "^7.2.8",
     "clsx": "^2.1.1",
     "hastscript": "^9.0.1",
     "tailwind-merge": "^3.5.0",
