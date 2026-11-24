@@ -67,3 +67,7 @@ import { SvglVueLogo } from '@selemondev/svgl-vue';
 ## ©️ Eco-system
 
 - [svgl-react](https://github.com/ridemountainpig/svgl-react) for the React eco-system.
+
+## License
+
+[MIT](./LICENSE) © [Selemon Brahanu](https://selemon.dev)
